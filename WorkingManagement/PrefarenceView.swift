@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  WorkingManagement
 //
 //  Created by 池田哲 on 2016/10/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class PrefarenceView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0782A08FB13F8CE4F5943CC5 /* Pods_WorkingManagementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37222A7D51FC539C5A9B8B8A /* Pods_WorkingManagementTests.framework */; };
+		1E087780CAF1C69118104374 /* Pods_WorkingManagementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6430F12F38AE82A312B7B030 /* Pods_WorkingManagementUITests.framework */; };
+		974F1FEA1DDA109100643E8A /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F1FE91DDA109100643E8A /* SweetAlert.swift */; };
 		975848F01DB529CB00A9E6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975848EF1DB529CB00A9E6D9 /* AppDelegate.swift */; };
-		975848F21DB529CB00A9E6D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975848F11DB529CB00A9E6D9 /* FirstViewController.swift */; };
-		975848F41DB529CB00A9E6D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975848F31DB529CB00A9E6D9 /* SecondViewController.swift */; };
+		975848F21DB529CB00A9E6D9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975848F11DB529CB00A9E6D9 /* CalendarView.swift */; };
+		975848F41DB529CB00A9E6D9 /* PrefarenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975848F31DB529CB00A9E6D9 /* PrefarenceView.swift */; };
 		975848F71DB529CB00A9E6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975848F51DB529CB00A9E6D9 /* Main.storyboard */; };
 		975848F91DB529CB00A9E6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975848F81DB529CB00A9E6D9 /* Assets.xcassets */; };
 		975848FC1DB529CB00A9E6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975848FA1DB529CB00A9E6D9 /* LaunchScreen.storyboard */; };
 		975849071DB529CB00A9E6D9 /* WorkingManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975849061DB529CB00A9E6D9 /* WorkingManagementTests.swift */; };
 		975849121DB529CB00A9E6D9 /* WorkingManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975849111DB529CB00A9E6D9 /* WorkingManagementUITests.swift */; };
+		97A36EBB1DD1FD78009A0C5B /* CalendarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A36EB91DD1FD78009A0C5B /* CalendarCellView.swift */; };
+		97A36EBC1DD1FD78009A0C5B /* CalendarCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A36EBA1DD1FD78009A0C5B /* CalendarCellView.xib */; };
+		97C258C81DD36C9B004143CD /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C258C71DD36C9B004143CD /* CalendarModel.swift */; };
+		97C258CA1DD36D3C004143CD /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C258C91DD36D3C004143CD /* WeekDay.swift */; };
+		97C258CC1DD36DA5004143CD /* CalendarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C258CB1DD36DA5004143CD /* CalendarColor.swift */; };
+		97C258CE1DD3815D004143CD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C258CD1DD3815D004143CD /* Utils.swift */; };
+		97EB1BB41DD1FF4100D09B0B /* CalendarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EB1BB31DD1FF4100D09B0B /* CalendarConfig.swift */; };
+		F2C89A019B5903FFB90DAC50 /* Pods_WorkingManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070838D21C8AD845A4553FC3 /* Pods_WorkingManagement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070838D21C8AD845A4553FC3 /* Pods_WorkingManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkingManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2C780902D7C68D7DB6F20C /* Pods-WorkingManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkingManagement.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkingManagement/Pods-WorkingManagement.release.xcconfig"; sourceTree = "<group>"; };
+		37222A7D51FC539C5A9B8B8A /* Pods_WorkingManagementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkingManagementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6430F12F38AE82A312B7B030 /* Pods_WorkingManagementUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkingManagementUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		791DEFEC2AA135D76B0076CE /* Pods-WorkingManagementUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkingManagementUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkingManagementUITests/Pods-WorkingManagementUITests.release.xcconfig"; sourceTree = "<group>"; };
+		974F1FE91DDA109100643E8A /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SweetAlert.swift; path = "../../../../Downloads/SweetAlert-iOS-master/SweetAlert/SweetAlert.swift"; sourceTree = "<group>"; };
 		975848EC1DB529CB00A9E6D9 /* WorkingManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		975848EF1DB529CB00A9E6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		975848F11DB529CB00A9E6D9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		975848F31DB529CB00A9E6D9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		975848F11DB529CB00A9E6D9 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		975848F31DB529CB00A9E6D9 /* PrefarenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefarenceView.swift; sourceTree = "<group>"; };
 		975848F61DB529CB00A9E6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		975848F81DB529CB00A9E6D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975848FB1DB529CB00A9E6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +66,17 @@
 		9758490D1DB529CB00A9E6D9 /* WorkingManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkingManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		975849111DB529CB00A9E6D9 /* WorkingManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingManagementUITests.swift; sourceTree = "<group>"; };
 		975849131DB529CB00A9E6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A36EB91DD1FD78009A0C5B /* CalendarCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarCellView.swift; path = ../../../xibs/calendarCell/CalendarCellView.swift; sourceTree = "<group>"; };
+		97A36EBA1DD1FD78009A0C5B /* CalendarCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarCellView.xib; path = ../../../xibs/calendarCell/CalendarCellView.xib; sourceTree = "<group>"; };
+		97C258C71DD36C9B004143CD /* CalendarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		97C258C91DD36D3C004143CD /* WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		97C258CB1DD36DA5004143CD /* CalendarColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarColor.swift; sourceTree = "<group>"; };
+		97C258CD1DD3815D004143CD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		97EB1BB31DD1FF4100D09B0B /* CalendarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarConfig.swift; sourceTree = "<group>"; };
+		B9C6AF1EB0EE26CDA15F6BDB /* Pods-WorkingManagementTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkingManagementTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkingManagementTests/Pods-WorkingManagementTests.release.xcconfig"; sourceTree = "<group>"; };
+		C782E4294A851FF6DE50BB75 /* Pods-WorkingManagementTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkingManagementTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkingManagementTests/Pods-WorkingManagementTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8904C60863B75AAD37CCAF5 /* Pods-WorkingManagementUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkingManagementUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkingManagementUITests/Pods-WorkingManagementUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA7F3534FB2BF928BAB6E179 /* Pods-WorkingManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkingManagement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkingManagement/Pods-WorkingManagement.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C89A019B5903FFB90DAC50 /* Pods_WorkingManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0782A08FB13F8CE4F5943CC5 /* Pods_WorkingManagementTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +100,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E087780CAF1C69118104374 /* Pods_WorkingManagementUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F739789E314F1D7B7753837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				070838D21C8AD845A4553FC3 /* Pods_WorkingManagement.framework */,
+				37222A7D51FC539C5A9B8B8A /* Pods_WorkingManagementTests.framework */,
+				6430F12F38AE82A312B7B030 /* Pods_WorkingManagementUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		974F1FE81DDA108200643E8A /* library */ = {
+			isa = PBXGroup;
+			children = (
+				974F1FE91DDA109100643E8A /* SweetAlert.swift */,
+			);
+			name = library;
+			sourceTree = "<group>";
+		};
 		975848E31DB529CA00A9E6D9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +132,8 @@
 				975849051DB529CB00A9E6D9 /* WorkingManagementTests */,
 				975849101DB529CB00A9E6D9 /* WorkingManagementUITests */,
 				975848ED1DB529CB00A9E6D9 /* Products */,
+				98C6036E3AF160EC5313FC42 /* Pods */,
+				1F739789E314F1D7B7753837 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +150,10 @@
 		975848EE1DB529CB00A9E6D9 /* WorkingManagement */ = {
 			isa = PBXGroup;
 			children = (
+				9758491F1DB52FDA00A9E6D9 /* src */,
 				975848EF1DB529CB00A9E6D9 /* AppDelegate.swift */,
-				975848F11DB529CB00A9E6D9 /* FirstViewController.swift */,
-				975848F31DB529CB00A9E6D9 /* SecondViewController.swift */,
-				975848F51DB529CB00A9E6D9 /* Main.storyboard */,
 				975848F81DB529CB00A9E6D9 /* Assets.xcassets */,
+				975848F51DB529CB00A9E6D9 /* Main.storyboard */,
 				975848FA1DB529CB00A9E6D9 /* LaunchScreen.storyboard */,
 				975848FD1DB529CB00A9E6D9 /* Info.plist */,
 			);
@@ -128,6 +178,68 @@
 			path = WorkingManagementUITests;
 			sourceTree = "<group>";
 		};
+		9758491F1DB52FDA00A9E6D9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				974F1FE81DDA108200643E8A /* library */,
+				97EB1BB21DD1FF0A00D09B0B /* constants */,
+				975849201DB52FE200A9E6D9 /* view */,
+				975849221DB52FF400A9E6D9 /* controller */,
+				975849211DB52FEC00A9E6D9 /* model */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		975849201DB52FE200A9E6D9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				975848F31DB529CB00A9E6D9 /* PrefarenceView.swift */,
+				97A36EB91DD1FD78009A0C5B /* CalendarCellView.swift */,
+				97A36EBA1DD1FD78009A0C5B /* CalendarCellView.xib */,
+				975848F11DB529CB00A9E6D9 /* CalendarView.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		975849211DB52FEC00A9E6D9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				97C258C71DD36C9B004143CD /* CalendarModel.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		975849221DB52FF400A9E6D9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				97C258CD1DD3815D004143CD /* Utils.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		97EB1BB21DD1FF0A00D09B0B /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				97EB1BB31DD1FF4100D09B0B /* CalendarConfig.swift */,
+				97C258C91DD36D3C004143CD /* WeekDay.swift */,
+				97C258CB1DD36DA5004143CD /* CalendarColor.swift */,
+			);
+			name = constants;
+			sourceTree = "<group>";
+		};
+		98C6036E3AF160EC5313FC42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F3534FB2BF928BAB6E179 /* Pods-WorkingManagement.debug.xcconfig */,
+				1A2C780902D7C68D7DB6F20C /* Pods-WorkingManagement.release.xcconfig */,
+				C782E4294A851FF6DE50BB75 /* Pods-WorkingManagementTests.debug.xcconfig */,
+				B9C6AF1EB0EE26CDA15F6BDB /* Pods-WorkingManagementTests.release.xcconfig */,
+				D8904C60863B75AAD37CCAF5 /* Pods-WorkingManagementUITests.debug.xcconfig */,
+				791DEFEC2AA135D76B0076CE /* Pods-WorkingManagementUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 975849161DB529CB00A9E6D9 /* Build configuration list for PBXNativeTarget "WorkingManagement" */;
 			buildPhases = (
+				D487BE0EED70A4177DDE0056 /* [CP] Check Pods Manifest.lock */,
 				975848E81DB529CA00A9E6D9 /* Sources */,
 				975848E91DB529CA00A9E6D9 /* Frameworks */,
 				975848EA1DB529CA00A9E6D9 /* Resources */,
+				CE1BDDA706BC43E1DDB34E12 /* [CP] Embed Pods Frameworks */,
+				4A5565709DA9DFEC577E6E8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 975849191DB529CB00A9E6D9 /* Build configuration list for PBXNativeTarget "WorkingManagementTests" */;
 			buildPhases = (
+				B8388DC9A069C03BBE9EFFA6 /* [CP] Check Pods Manifest.lock */,
 				975848FE1DB529CB00A9E6D9 /* Sources */,
 				975848FF1DB529CB00A9E6D9 /* Frameworks */,
 				975849001DB529CB00A9E6D9 /* Resources */,
+				1D8986F9DA292C26819DEA8F /* [CP] Embed Pods Frameworks */,
+				0835C589006DE7044F711307 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9758491C1DB529CB00A9E6D9 /* Build configuration list for PBXNativeTarget "WorkingManagementUITests" */;
 			buildPhases = (
+				AA3AD1E6C00AF6255C8462BF /* [CP] Check Pods Manifest.lock */,
 				975849091DB529CB00A9E6D9 /* Sources */,
 				9758490A1DB529CB00A9E6D9 /* Frameworks */,
 				9758490B1DB529CB00A9E6D9 /* Resources */,
+				585880D1BDB81A7324C19B8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,7 +311,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "池田哲";
 				TargetAttributes = {
 					975848EB1DB529CA00A9E6D9 = {
@@ -241,6 +361,7 @@
 				975848FC1DB529CB00A9E6D9 /* LaunchScreen.storyboard in Resources */,
 				975848F91DB529CB00A9E6D9 /* Assets.xcassets in Resources */,
 				975848F71DB529CB00A9E6D9 /* Main.storyboard in Resources */,
+				97A36EBC1DD1FD78009A0C5B /* CalendarCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +381,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0835C589006DE7044F711307 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkingManagementTests/Pods-WorkingManagementTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D8986F9DA292C26819DEA8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkingManagementTests/Pods-WorkingManagementTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A5565709DA9DFEC577E6E8E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkingManagement/Pods-WorkingManagement-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		585880D1BDB81A7324C19B8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkingManagementUITests/Pods-WorkingManagementUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3AD1E6C00AF6255C8462BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8388DC9A069C03BBE9EFFA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE1BDDA706BC43E1DDB34E12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkingManagement/Pods-WorkingManagement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D487BE0EED70A4177DDE0056 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		975848E81DB529CA00A9E6D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				975848F41DB529CB00A9E6D9 /* SecondViewController.swift in Sources */,
+				97C258CA1DD36D3C004143CD /* WeekDay.swift in Sources */,
+				974F1FEA1DDA109100643E8A /* SweetAlert.swift in Sources */,
+				97EB1BB41DD1FF4100D09B0B /* CalendarConfig.swift in Sources */,
+				97C258CE1DD3815D004143CD /* Utils.swift in Sources */,
+				975848F41DB529CB00A9E6D9 /* PrefarenceView.swift in Sources */,
 				975848F01DB529CB00A9E6D9 /* AppDelegate.swift in Sources */,
-				975848F21DB529CB00A9E6D9 /* FirstViewController.swift in Sources */,
+				97C258C81DD36C9B004143CD /* CalendarModel.swift in Sources */,
+				97A36EBB1DD1FD78009A0C5B /* CalendarCellView.swift in Sources */,
+				975848F21DB529CB00A9E6D9 /* CalendarView.swift in Sources */,
+				97C258CC1DD36DA5004143CD /* CalendarColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +591,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -390,6 +642,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -417,7 +670,9 @@
 		};
 		975849171DB529CB00A9E6D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7F3534FB2BF928BAB6E179 /* Pods-WorkingManagement.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3TYWTMR4K5;
 				INFOPLIST_FILE = WorkingManagement/Info.plist;
@@ -425,12 +680,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = P.T.WorkingManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		975849181DB529CB00A9E6D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2C780902D7C68D7DB6F20C /* Pods-WorkingManagement.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3TYWTMR4K5;
 				INFOPLIST_FILE = WorkingManagement/Info.plist;
@@ -438,11 +696,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = P.T.WorkingManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		9758491A1DB529CB00A9E6D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C782E4294A851FF6DE50BB75 /* Pods-WorkingManagementTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +718,7 @@
 		};
 		9758491B1DB529CB00A9E6D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C6AF1EB0EE26CDA15F6BDB /* Pods-WorkingManagementTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +734,7 @@
 		};
 		9758491D1DB529CB00A9E6D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8904C60863B75AAD37CCAF5 /* Pods-WorkingManagementUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3TYWTMR4K5;
@@ -487,6 +749,7 @@
 		};
 		9758491E1DB529CB00A9E6D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 791DEFEC2AA135D76B0076CE /* Pods-WorkingManagementUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3TYWTMR4K5;
@@ -518,6 +781,7 @@
 				975849181DB529CB00A9E6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		975849191DB529CB00A9E6D9 /* Build configuration list for PBXNativeTarget "WorkingManagementTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +790,7 @@
 				9758491B1DB529CB00A9E6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9758491C1DB529CB00A9E6D9 /* Build configuration list for PBXNativeTarget "WorkingManagementUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +799,7 @@
 				9758491E1DB529CB00A9E6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

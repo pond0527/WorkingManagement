@@ -12,10 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var calendarNavigation: UINavigationController?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // navigationController設定
+        let calendarView: CalendarView = CalendarView()
+        calendarNavigation = UINavigationController(rootViewController: calendarView)
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = calendarNavigation
+        self.window?.backgroundColor = UIColor.white
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

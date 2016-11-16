@@ -1,0 +1,47 @@
+PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - FoldingTabBar (1.1)
+  - JTAppleCalendar (5.0.1)
+  - SnapKit (3.0.2)
+  - SwiftDate (4.0.7)
+
+DEPENDENCIES:
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`, branch `swift3`)
+  - FoldingTabBar (~> 1.1)
+  - JTAppleCalendar (from `https://github.com/patchthecode/JTAppleCalendar.git`, branch `Swift3`)
+  - SnapKit (~> 3.0.2)
+  - SwiftDate (from `https://github.com/malcommac/SwiftDate.git`)
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :branch: swift3
+    :git: https://github.com/ViccAlexander/Chameleon.git
+  JTAppleCalendar:
+    :branch: Swift3
+    :git: https://github.com/patchthecode/JTAppleCalendar.git
+  SwiftDate:
+    :git: https://github.com/malcommac/SwiftDate.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: c400c32eead1c6e74008983c3e7c845ae069b41d
+    :git: https://github.com/ViccAlexander/Chameleon.git
+  JTAppleCalendar:
+    :commit: f7f95b738201bc0a1fdc1d2a4fde75819b466569
+    :git: https://github.com/patchthecode/JTAppleCalendar.git
+  SwiftDate:
+    :commit: aa90cba4bf3afdf617f4bd31ad764f30260285b5
+    :git: https://github.com/malcommac/SwiftDate.git
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  FoldingTabBar: 55a302cc5753755f917bf0e70b8083705fb2fe8c
+  JTAppleCalendar: cb2417b1f3367d1993e31720a663646742139a5c
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  SwiftDate: 84b6ddfd6858061dfeedd2d38f79a3130bfa1028
+
+PODFILE CHECKSUM: 6c3455b426f52a17a920a9844e57fd463a1b1663
+
+COCOAPODS: 1.0.1
