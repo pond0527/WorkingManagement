@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  WorkingManagement
 //
-//  Created by 池田哲 on 2016/10/18.
-//  Copyright © 2016年 池田哲. All rights reserved.
+//  Created by Tetsu on 2016/10/18.
+//  Copyright © 2016年 Pond_T. All rights reserved.
 //
 
 import UIKit
+import FoldingTabBar
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,14 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // navigationController設定
+        // ===============================================================================
+        // MARK: - NavigationController Congigure
+        
         let calendarView: CalendarView = CalendarView()
         calendarNavigation = UINavigationController(rootViewController: calendarView)
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
         self.window?.rootViewController = calendarNavigation
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
-        
+
         return true
     }
 
@@ -52,4 +55,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

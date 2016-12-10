@@ -3,7 +3,7 @@
 //  WorkingManagement
 //
 //  Created by Tetsu on 2016/11/08.
-//  Copyright © 2016年 池田哲. All rights reserved.
+//  Copyright © 2016年 Pond_T. All rights reserved.
 //
 
 import Foundation
@@ -16,19 +16,15 @@ public class CalendarConfig {
     /// セクション数
     public static let MAX_SECTION_NUM = 2
     
-    /// 曜日のセクション
+    /// 曜日のセクション番号
     public static let SECTION_WEEK = 0
     
-    /// 日付のセクション
+    /// 日付のセクション番号
     public static let SECTION_DATE = 1
-    
-    /// 曜日の数
-    public static let MAX_WEEKEND = 7
-    
-    /// 月の日数
-    public static let TEST_MAX_DATE = 35
     
     /// セル間隔
     public static let GRID_LINE_SPACE: CGFloat = 1.0
     
+    /// 日本語圏
+    public static let JA_LOCALE = "ja_JP"
 }

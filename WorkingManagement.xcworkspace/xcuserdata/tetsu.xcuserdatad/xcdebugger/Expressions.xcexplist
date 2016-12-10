@@ -8,6 +8,59 @@
             <PersistentString
                value = "indexPath.section ">
             </PersistentString>
+            <PersistentString
+               value = "cell.dateLabel.text">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CalendarModel.getIndexDateForCell(index : Int) -&gt; Int:CalendarModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CalendarModel.date.getter:CalendarModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cal.locale">
+            </PersistentString>
+            <PersistentString
+               value = "Local.current">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CalendarView.collectionView(UICollectionView, numberOfItemsInSection : Int) -&gt; Int:CalendarView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataManager.weekdayName">
+            </PersistentString>
+            <PersistentString
+               value = "shortWeekdaySymbols">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataManager.weekdayName.getter:DataManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.date">
+            </PersistentString>
+            <PersistentString
+               value = "self.date.weekdayName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static CalendarModel.setDateOfMonth() -&gt; ():CalendarModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "CalendarModel._calendarModel.date">
+            </PersistentString>
+            <PersistentString
+               value = "CalendarModel._calendarModel.date.endOfDay">
+            </PersistentString>
          </PersistentStrings>
       </ContextState>
    </ContextStates>

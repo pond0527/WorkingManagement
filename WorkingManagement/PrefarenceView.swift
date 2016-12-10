@@ -2,8 +2,8 @@
 //  SecondViewController.swift
 //  WorkingManagement
 //
-//  Created by 池田哲 on 2016/10/18.
-//  Copyright © 2016年 池田哲. All rights reserved.
+//  Created by Tetsu on 2016/10/18.
+//  Copyright © 2016年 Pond_T. All rights reserved.
 //
 
 import UIKit

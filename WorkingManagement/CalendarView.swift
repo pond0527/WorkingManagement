@@ -2,30 +2,38 @@
 //  FirstViewController.swift
 //  WorkingManagement
 //
-//  Created by 池田哲 on 2016/10/18.
-//  Copyright © 2016年 池田哲. All rights reserved.
+//  Created by Tetsu on 2016/10/18.
+//  Copyright © 2016年 Pond_T. All rights reserved.
 //
 
 import UIKit
 import ChameleonFramework
 import SwiftDate
 import SnapKit
+import FoldingTabBar
 
 class CalendarView: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     var calendarView: UICollectionView!
+    let dataManager = DataManager.getInstance()
+    var shortWeekdaySymbols: [String] = []
+    var fromWeekendIndex: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         setupNaviBar()
         setupCalendarView()
+        shortWeekdaySymbols = dataManager.getShortWeekdaySymbols()
+        fromWeekendIndex = dataManager.fromWeekendIndex()
+        self.navigationItem.title = Util.formatDateToString(date: dataManager.date)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     // =========================================================================
     // MARK: - Create View
@@ -53,12 +61,12 @@ class CalendarView: UIViewController, UICollectionViewDataSource, UICollectionVi
                                  bottom: CalendarConfig.GRID_LINE_SPACE,
                                  right: CalendarConfig.GRID_LINE_SPACE)
         
-        let flowLayout = setupBeautifulGrid(numberOfGridsPerRow: CalendarConfig.MAX_WEEKEND,
+        let flowLayout = setupGrid(numberOfGridsPerRow: dataManager.getShortWeekdaySymbols().count,
                                             gridLineSpace: CalendarConfig.GRID_LINE_SPACE,
                                             sectionInset: inset)
         
         calendarView = UICollectionView(frame: self.view.frame, collectionViewLayout: flowLayout)
-        calendarView.backgroundColor = CalendarColor.view.get
+        calendarView.backgroundColor = CalendarColor.view.value
         
         let calendarCell: UINib = UINib(nibName: "CalendarCellView", bundle: nil)
         calendarView.register(calendarCell, forCellWithReuseIdentifier: "calendarCell")
@@ -75,19 +83,25 @@ class CalendarView: UIViewController, UICollectionViewDataSource, UICollectionVi
         }
     }
     
+    
     // =========================================================================
     // MARK: - NavigationController Event
     
     
     /// 次月: ナビゲーション押下時イベントの設定を行う。
     func tapNextMonth() {
-        _ = SweetAlert().showAlert("仮実装", subTitle: "長押し検出: 次月", style: .none, buttonTitle: "OK")
+        dataManager.setNextMonth()
+        self.loadView()
+        self.viewDidLoad()
     }
     
     /// 前月: ナビゲーション押下時イベントの設定を行う。
     func tapPreviousMonth() {
-        _ = SweetAlert().showAlert("仮実装", subTitle: "長押し検出: 前月", style: .none, buttonTitle: "OK")
+        dataManager.setPreviousMonth()
+        self.loadView()
+        self.viewDidLoad()
     }
+    
     
     // =========================================================================
     // MARK: - UICollectionViewDataSource
@@ -109,17 +123,17 @@ class CalendarView: UIViewController, UICollectionViewDataSource, UICollectionVi
     /// - Returns: <#return value description#>
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == CalendarConfig.SECTION_WEEK {
-            return CalendarConfig.MAX_WEEKEND
+            return dataManager.getShortWeekdaySymbols().count
         } else {
-            return CalendarConfig.TEST_MAX_DATE
+            return dataManager.lastOfDay + dataManager.fromWeekendIndex()
         }
     }
 
+    
     // =========================================================================
     // MARK: - UICollectionViewDataSource
     
     
-    var cnt = 1
     /// 指定したセルに値を設定する。
     ///
     /// - parameter collectionView: <#collectionView description#>
@@ -130,16 +144,19 @@ class CalendarView: UIViewController, UICollectionViewDataSource, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calendarCell", for: indexPath as IndexPath) as! CalendarCellView
         
         if indexPath.section == CalendarConfig.SECTION_WEEK {
-            cell.backgroundColor = CalendarColor.holiday.get
-            cell.dateLabel.text = WeekDay.weekdays[indexPath.row].name
+            cell.backgroundColor = CalendarColor.holiday.value
+            cell.dateLabel.text = shortWeekdaySymbols[indexPath.row]
         } else {
-//            cell.backgroundColor = CalendarColor.date.get
-            cell.dateLabel.text = String(cnt)
-            cnt += 1
+            if fromWeekendIndex <= indexPath.row {
+                cell.backgroundColor = CalendarColor.workday.value
+                let dateIndex: Int = indexPath.row - fromWeekendIndex
+                cell.dateLabel.text = String(dataManager.getIndexDateForCell(index: dateIndex))
+            }
         }
         return cell
     }
 
+    
     // =========================================================================
     // MARK: - UICollectionViewDelegateFlowLayout
     
@@ -151,18 +168,15 @@ class CalendarView: UIViewController, UICollectionViewDataSource, UICollectionVi
     ///   - space: セル間隔
     ///   - inset: 位置調整
     /// - Returns: FlowLayout
-    private func setupBeautifulGrid(numberOfGridsPerRow: Int, gridLineSpace space: CGFloat, sectionInset inset: UIEdgeInsets) -> UICollectionViewFlowLayout {
+    private func setupGrid(numberOfGridsPerRow: Int, gridLineSpace space: CGFloat, sectionInset inset: UIEdgeInsets) -> UICollectionViewFlowLayout {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         
         guard numberOfGridsPerRow > 0 else { return layout }
-        
 
         var length = self.view.frame.width
         length -= space * CGFloat(numberOfGridsPerRow - 1)
-        
-        let isScrollDirectionVertical = layout.scrollDirection == .vertical
-        length -= isScrollDirectionVertical ? (inset.left + inset.right) : (inset.top + inset.bottom)
+        length -= (inset.left + inset.right)
         
         let side = length / CGFloat(numberOfGridsPerRow)
         guard side > 0.0 else { return layout }
